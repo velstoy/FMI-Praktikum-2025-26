@@ -10,9 +10,13 @@ int main()
 	std::cout << "B: ";
 	std::cin >> b;
 
-	double swap = a;
+	/*double swap = a;
 	a = b;
-	b = swap;
+	b = swap;*/
+
+	a = a + b;
+	b = a - b;
+	a = a - b;
 
 	std::cout << "A: " << a << std::endl;
 	std::cout << "B: " << b << std::endl;
