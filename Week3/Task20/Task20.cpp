@@ -13,7 +13,7 @@ int main()
 		}
 		if (i != n - 1)
 		{
-			for (int j = 0; j < 5 * n - 4 * i - 3; j++)
+			for (int j = 0; j < (n + 1) * n - n * i - (n - 1); j++)
 			{
 				std::cout << " ";
 			}
@@ -38,7 +38,7 @@ int main()
 		{
 			std::cout << j + 1 << " ";
 		}
-		for (int j = 0; j < 5 * n - 4 * i - 3; j++)
+		for (int j = 0; j < (n + 1) * n - n * i - (n - 1); j++)
 		{
 			std::cout << " ";
 		}
