@@ -15,6 +15,7 @@ int main()
 
 bool areBitsPermutation(int a, int b)
 {
+	// Runtime O(2n) ~ O(n)
 	if (countRaisedFlags(a) == countRaisedFlags(b))
 	{
 		return true;
@@ -26,6 +27,8 @@ bool areBitsPermutation(int a, int b)
 int countRaisedFlags(int n)
 {
 	int count = 0;
+
+	//Runtime O(n)
 
 	for (size_t i = 0; i < sizeof(n) * 8; i++)
 	{
