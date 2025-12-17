@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstdint>
 
 constexpr int N = 1024;
 
