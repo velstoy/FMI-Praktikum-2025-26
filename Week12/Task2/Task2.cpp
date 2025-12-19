@@ -8,7 +8,6 @@ int main()
 	int n, m;
 	std::cin >> n >> m;
 
-
 	int** matrix = createDynamicMatrix(n, m);
 
 	freeMatrix(matrix, n);
@@ -19,6 +18,11 @@ int main()
 int** createDynamicMatrix(int n, int m)
 {
 	int** matrix = new(std::nothrow) int* [n];
+
+	if (!matrix)
+	{
+		return nullptr;
+	}
 
 	for (size_t i = 0; i < n; i++)
 	{
