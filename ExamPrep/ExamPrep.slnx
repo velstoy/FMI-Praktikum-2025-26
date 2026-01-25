@@ -5,4 +5,5 @@
   </Configurations>
   <Project Path="ExamPrep/ExamPrep.vcxproj" Id="bf145fa7-0f8d-41d4-b0de-a28868b8130d" />
   <Project Path="ExamPrep2/ExamPrep2.vcxproj" Id="5b76c18b-a502-492e-8a10-7685cdd3e695" />
+  <Project Path="ExamPrep3/ExamPrep3.vcxproj" Id="8e24bee4-f0e9-42aa-a12c-078aa6cb6cf1" />
 </Solution>
