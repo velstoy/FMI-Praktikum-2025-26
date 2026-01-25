@@ -55,7 +55,7 @@ int main()
 	delete[] grid;
 	grid = nullptr;*/
 
-	int arr[] = { 1, 2, 3, 4 };
+	int arr[] = { 1, 2, 3 };
 	size_t size = 0;
 
 	int* res = findSets(arr, sizeof(arr) / sizeof(int), size);
@@ -217,9 +217,9 @@ int containsAt(const char* str, char c, bool* visited)
 
 int* findSets(const int* arr, size_t N, size_t& size)
 {
-	int subsetCount = myPow(2, N);
+	int subsetCount = myPow(2, N) - 1;
 
-	int subsetArrSize = N * (subsetCount / 2) + subsetCount;
+	int subsetArrSize = N * myPow(2, N - 1) + subsetCount + 1;
 
 	size = subsetArrSize;
 
@@ -232,10 +232,10 @@ int* findSets(const int* arr, size_t N, size_t& size)
 	for (size_t i = 0; i < subsetCount; i++)
 	{
 		for (size_t j = 0; j < N; j++)
-		{
+		{	
 			uint32_t mask = (1 << j);
 
-			if (combination & mask)
+			if ((combination & mask) != 0)
 			{
 				*subsets = arr[j];
 				subsets++;
@@ -245,8 +245,10 @@ int* findSets(const int* arr, size_t N, size_t& size)
 		*subsets = 0;
 		subsets++;
 
-		combination ^= (1 << (subsetCount - i) % N);
+		combination++;
 	}
+
+	*subsets = 0;
 
 	return beginning;
 }
