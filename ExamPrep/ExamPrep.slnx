@@ -3,5 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="ExamPrep/ExamPrep.vcxproj" />
+  <Project Path="ExamPrep/ExamPrep.vcxproj" Id="bf145fa7-0f8d-41d4-b0de-a28868b8130d" />
+  <Project Path="ExamPrep2/ExamPrep2.vcxproj" Id="5b76c18b-a502-492e-8a10-7685cdd3e695" />
 </Solution>
