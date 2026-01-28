@@ -1,0 +1,37 @@
+size_t symbolsLen;
+std::cin >> symbolsLen;
+
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+char* symbols = new char[symbolsLen + 1];
+std::cin.getline(symbols, symbolsLen + 1);
+
+if (!symbols)
+{
+	return -1;
+}
+
+size_t wordLen;
+std::cin >> wordLen;
+
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+char* word = new char[wordLen + 1];
+std::cin.getline(word, wordLen + 1);
+
+if (!word)
+{
+	return -1;
+}
+
+if (doExist(symbols, word))
+{
+	std::cout << word << " is contained in " << symbols << " turned backwards!" << std::endl;
+}
+else
+{
+	std::cout << word << " is NOT contained in " << symbols << " turned backwards!" << std::endl;
+}
+
+delete[] symbols;
+delete[] word;

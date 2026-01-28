@@ -1,0 +1,4 @@
+unsigned short int num;
+std::cin >> num;
+
+std::cout << reverseBitwise(num) << std::endl;
