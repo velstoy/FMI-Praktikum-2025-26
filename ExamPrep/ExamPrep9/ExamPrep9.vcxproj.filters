@@ -24,5 +24,6 @@
     <Text Include="task2_input.txt" />
     <Text Include="task3_input.txt" />
     <Text Include="task4_input.txt" />
+    <Text Include="task5_input.txt" />
   </ItemGroup>
 </Project>
