@@ -1,0 +1,7 @@
+int n, m;
+std::cin >> n >> m;
+	
+char c;
+std::cin >> c;
+
+printRectangle(n, m, c);

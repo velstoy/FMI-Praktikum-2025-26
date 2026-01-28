@@ -1,0 +1,45 @@
+size_t size1;
+std::cin >> size1;
+
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+int* arr1 = new (std::nothrow) int[size1];
+
+if (!arr1)
+{
+	return -1;
+}
+
+for (size_t i = 0; i < size1; i++)
+{
+	std::cin >> arr1[i];
+}
+
+size_t size2;
+std::cin >> size2;
+
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+int* arr2 = new (std::nothrow) int[size2];
+
+if (!arr2)
+{
+	return -1;
+}
+
+for (size_t i = 0; i < size2; i++)
+{
+	std::cin >> arr2[i];
+}
+
+int* combined = getCombinedSortedArray(arr1, size1, arr2, size2);
+
+for (size_t i = 0; i < size1 + size2; i++)
+{
+	std::cout << combined[i] << " ";
+}
+std::cout << std::endl;
+
+delete[] arr1;
+delete[] arr2;
+delete[] combined;
