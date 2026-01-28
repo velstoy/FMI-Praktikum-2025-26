@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b24ca4e1-09f1-475e-84ca-70e105cc9c57}</ProjectGuid>
-    <RootNamespace>ExamPrep7</RootNamespace>
+    <ProjectGuid>{0976f448-cc66-475c-8d66-e7d810a9e220}</ProjectGuid>
+    <RootNamespace>ExamPrep8</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ExamPrep7.cpp" />
+    <ClCompile Include="ExamPrep8.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="task1_input.txt" />

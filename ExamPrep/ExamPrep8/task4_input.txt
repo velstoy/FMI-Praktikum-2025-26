@@ -1,0 +1,7 @@
+long num;
+std::cin >> num;
+
+int k;
+std::cin >> k;
+
+std::cout << DigitPos(num, k) << std::endl;

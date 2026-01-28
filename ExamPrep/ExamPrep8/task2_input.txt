@@ -1,0 +1,8 @@
+const size_t MAX_SIZE = 1024;
+
+char str[MAX_SIZE];
+std::cin.getline(str, MAX_SIZE);
+
+Revert(str);
+
+std::cout << str;

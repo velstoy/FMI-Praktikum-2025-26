@@ -1,0 +1,1 @@
+std::cout << sqrt_a(64, 0.0000001) << std::endl;
